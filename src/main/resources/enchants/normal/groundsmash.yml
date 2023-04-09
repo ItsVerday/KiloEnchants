@@ -1,0 +1,29 @@
+name: "Ground Smash"
+description: Smashes your opponent into the ground.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: legendary
+
+general-config:
+  targets:
+    - sword
+    - axe
+  grindstoneable: true
+  disabled-in-worlds: []
+  conflicts:
+    - knockback
+    - grapple
+    - annihilate
+    - tornado
+  maximum-level: 4
+
+config:
+  # The velocity per level of the enchantment.
+  velocity-per-level: 0.25
+
+  # The fall height per level to use. Effectively "fakes" the entity falling from a height, making them take fall damage.
+  fall-height-per-level: 3

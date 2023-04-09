@@ -1,0 +1,22 @@
+name: "Orchard"
+description: Breaking leaves has a &a%value%%&r chance to yield apples.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: rare
+
+general-config:
+  targets:
+    - hoe
+    - shears
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 5
+
+config:
+  # The base chance to receive an apple.
+  # Final apple chance = apple-chance * level
+  apple-chance: 0.05

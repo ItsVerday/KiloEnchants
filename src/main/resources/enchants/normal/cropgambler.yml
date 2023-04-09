@@ -1,0 +1,41 @@
+name: "Crop Gambler"
+description: Broken crops have a &a%value%%&r chance to yield significantly more drops.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: epic
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts:
+    - harvesting
+    - turbo_beetroots
+    - turbo_carrot
+    - turbo_potato
+    - turbo_warts
+    - turbo_wheat
+  maximum-level: 5
+
+config:
+  # Whether crops must be fully grown to give extra drops. It is recommended to leave this as true.
+  require-fully-grown: true
+
+  # Whether seeds should be ignored when multiplying drops
+  ignore-seeds: false
+
+  # The base chance for crop gambler to activate, at level 1
+  base-chance: 0.05
+
+  # The chance per level for crop gambler to activate
+  chance-per-level: 0.05
+
+  # The base multiplier for crop gambler at level 1
+  base-multiplier: 10
+
+  # The multiplier per level for crop gambler
+  multiplier-per-level: 5

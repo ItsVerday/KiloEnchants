@@ -1,0 +1,29 @@
+name: "Harvesting"
+description: Broken crops yield extra drops.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: rare
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts:
+    - cropgambler
+    - turbo_beetroots
+    - turbo_carrot
+    - turbo_potato
+    - turbo_warts
+    - turbo_wheat
+  maximum-level: 4
+
+config:
+  # Whether crops must be fully grown to give extra drops. It is recommended to leave this as true.
+  require-fully-grown: true
+
+  # Whether seeds should be ignored when multiplying drops
+  ignore-seeds: false

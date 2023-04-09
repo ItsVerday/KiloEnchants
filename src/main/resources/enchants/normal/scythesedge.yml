@@ -1,0 +1,29 @@
+name: "Scythe's Edge"
+description: When harvesting crops, nearby crops will also be harvested.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: rare
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 2
+
+config:
+  # Harvesting radius = enchantment level * radius-multiplier.
+  radius-multiplier: 1.5
+
+  # Whether the harvesting area should be circular instead of square.
+  circular: true
+
+  # Whether partially-grown crops will be ignored. It is recommended to leave this as true.
+  only-harvest-fully-grown-crops: true
+
+  # Whether the enchantment will only break crops of the same type as the targeted crop.
+  only-harvest-same-crop-type: true

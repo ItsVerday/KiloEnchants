@@ -1,0 +1,29 @@
+name: "Poison Protection"
+description: Protects the player against poison damage.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: uncommon
+
+general-config:
+  targets:
+    - helmet
+    - chestplate
+    - leggings
+    - boots
+  grindstoneable: true
+  conflicts:
+    - protection
+    - fire_protection
+    - blast_protection
+  maximum-level: 5
+
+config:
+  # Fraction to reduce remaining damage per level.
+  reduction-per-level: 0.1
+
+  # The level cap for the damage reduction effect. Any additional levels above this cap will have no effect.
+  level-cap: 10

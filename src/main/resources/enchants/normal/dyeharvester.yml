@@ -1,0 +1,24 @@
+name: "Dye Harvester"
+description: Broken flowers will instead drop dye.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: uncommon
+
+general-config:
+  targets:
+    - hoe
+    - shears
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 1
+
+config:
+  # The minimum amount of dyes to give.
+  minimum-count: 2
+
+  # The maximum amount of dyes to give.
+  maximum-count: 4

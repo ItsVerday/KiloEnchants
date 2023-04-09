@@ -1,0 +1,29 @@
+name: "Cultivation"
+description: Allows a tool to grow crops (similar to Bone Meal). Right-click a crop to have a &a%value%%&r chance to grow it.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: special
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 4
+
+config:
+  # Whether to spawn a bone-mealing particle effect.
+  particles: true
+
+  # Whether to damage the hoe used to grow the crop. It is recommended to leave this as true.
+  damage-item: true
+
+  # The base chance for cultivate to activate, at level 1
+  base-chance: 0.04
+
+  # The chance per level for cultivate to activate
+  chance-per-level: 0.02

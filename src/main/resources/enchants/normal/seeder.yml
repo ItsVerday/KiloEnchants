@@ -1,0 +1,33 @@
+name: "Seeder"
+description: Right-clicking on farmland or tilling dirt will plant seeds from your inventory.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: epic
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 3
+
+config:
+  # Planting radius = enchantment level * radius-multiplier.
+  radius-multiplier: 0.75
+
+  # Whether the planting area should be circular instead of square.
+  circular: true
+
+  # Whether to play a crop-planting sound.
+  play-sound: true
+
+  # Whether to damage the hoe used to plant the seeds.
+  damage-item: true
+
+  # Whether to damage the tool once for every crop placed. If set to true, the tool will lose 1 durability for every crop planted.
+  # If set to false, the tool will only lose 1 durability.
+  damage-per-planted: false

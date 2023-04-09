@@ -1,0 +1,27 @@
+name: "Farmer's Delight"
+description: Harvested crops will also yield experience.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: uncommon
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 5
+
+config:
+  # Whether crops must be fully grown to give exp. It is recommended to leave this as true.
+  # If set to false, partially grown crops will yield reduced XP.
+  require-fully-grown: true
+
+  # The minimum experience to yield. Will be scaled by the enchantment level.
+  minimum-experience: 2
+
+  # The maximum experience to yield. Will be scaled by the enchantment level.
+  maximum-experience: 4

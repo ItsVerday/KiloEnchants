@@ -1,0 +1,29 @@
+name: "Hot Potato"
+description: Harvested potatoes have a &a%value%%&r chance to automatically cook.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: epic
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts: []
+  maximum-level: 4
+
+config:
+  # Whether crops must be fully grown to cook potatoes. It is recommended to leave this as true.
+  require-fully-grown: true
+
+  # The base chance for hot potato to activate (per potato), at level 1
+  base-chance: 0.4
+
+  # The chance per level for hot potato to activate (per potato)
+  chance-per-level: 0.2
+
+  # Whether to play a cooking sound when hot potato activates
+  play-sound: true

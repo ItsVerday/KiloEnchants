@@ -1,0 +1,5 @@
+name: KiloEnchants
+version: ${project.version}
+main: gg.valgo.kiloenchants.KiloEnchantsExtension
+api-version: 1.16
+description: An extension to EcoEnchants with a large number of enchantments.

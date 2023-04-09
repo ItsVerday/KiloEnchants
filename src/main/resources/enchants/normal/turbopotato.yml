@@ -1,0 +1,28 @@
+name: "Turbo Potato"
+description: Yields &a%value%x&r potatoes upon harvesting.
+enabled: true
+
+obtaining:
+  table: true
+  villager: true
+  loot: true
+  rarity: uncommon
+
+general-config:
+  targets:
+    - hoe
+  grindstoneable: true
+  conflicts:
+    - cropgambler
+    - harvest
+  maximum-level: 5
+
+config:
+  # Whether crops must be fully grown to give extra drops. It is recommended to leave this as true.
+  require-fully-grown: true
+
+  # The base multiplier at level 1
+  base-multiplier: 2
+
+  # The multiplier per level
+  multiplier-per-level: 0.5
